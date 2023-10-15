@@ -71,9 +71,7 @@ int main()
         end = (double)clock();
         cpu_msec = (end - start) / CLOCKS_PER_SEC;
         cpu_msec *= 1000.0;
-        // bandwidth = sizeof(double) * N * cpu_msec / (1024 * 1024);
-        // bandwidth = (2 * N * N * N * sizeof(double)) / (cpu_msec * 1024 * 1024);
-        bandwidth = 2 * N * N * sizeof(double) * (1000.0 / cpu_msec) / (1024 * 1024);
+        bandwidth = 2 * N * N * sizeof(double) * (1000.0 / cpu_msec) / (1024 * 1024); // doubt ??
 
         // Store
         fprintf(file_cpu, "%d, %f", BLOCK_SIZE, cpu_msec);
