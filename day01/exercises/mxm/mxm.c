@@ -11,7 +11,7 @@ int i, j, k;
 double bandwidth, cpu_msec, start, end;
 
 int block_sizes[] = {1, 2, 5, 8, 10, 20, 25, 40, 50, 100, 125, 200};
-int block_sizes_length = 10;
+int block_sizes_length = 6;
 
 int main()
 {
